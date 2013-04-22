@@ -38,7 +38,7 @@ and `PEANUT_GALLERY_HOST` with the host where peanut gallery is running (localho
 git clone git@github.com:aubreyrhodes/penut-gallery.git
 
 # Install rvm and create a gemset
-rvm install 2.0.0 && rvm gemset create penut-gallery
+rvm install 2.0.0 && rvm gemset create peanut-gallery
 
 # Install other dependencies
 brew install postgres
