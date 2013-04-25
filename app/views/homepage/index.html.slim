@@ -3,3 +3,13 @@ h1 Peanut Gallery
 p
   =' link_to 'Sign Up', new_user_path, rel: 'sign-up'
   = link_to 'Sign In', new_session_path, rel: 'sign-in'
+
+- if user_signed_in?
+  p#blogs
+    h2
+      | Blogs
+      =' link_to 'Add a Blog', new_blog_path, rel: 'new-blog'
+    ul
+      - @blogs.each do |blog|
+        li.blog= blog.name
+

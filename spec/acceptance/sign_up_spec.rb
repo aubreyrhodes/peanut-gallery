@@ -16,3 +16,10 @@ describe 'user sign in' do
     sign_in
   end
 end
+
+describe 'a user that has not signed in' do
+  it 'should not be able to view user content' do
+    visit root_path
+    expect(page).to_not have_css('[rel~=new-blog]')
+  end
+end
