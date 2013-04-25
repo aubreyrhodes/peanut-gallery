@@ -18,6 +18,7 @@ group :test, :development do
   gem 'factory_girl_rails'
   gem 'heroku'
   gem 'zonebie'
+  gem 'pry'
 end
 
 group :test do
@@ -37,4 +38,6 @@ gem 'jbuilder', '~> 1.0.1'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'foreman'
 gem 'thin'
+gem 'slim-rails'
+gem 'simple_form'
 
