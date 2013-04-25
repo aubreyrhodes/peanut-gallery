@@ -10,3 +10,9 @@ describe 'user sign up' do
     click_rel('user-submit')
   end
 end
+
+describe 'user sign in' do
+  it 'allows an existing user to login' do
+    sign_in
+  end
+end
